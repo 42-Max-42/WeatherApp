@@ -1,0 +1,211 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 960px;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+}
+
+.app-header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.search-section {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #b0bec5;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #0288d1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #0277bd;
+}
+
+.location-label {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.status {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.status.error {
+  color: #c62828;
+}
+
+.blocks-section {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+
+.card-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.card-temp {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.card-desc {
+  font-size: 13px;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
+.activities-section {
+  margin-top: 24px;
+}
+
+.activities-section h2 {
+  margin-bottom: 8px;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.activities-column {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.activities-column h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.activities-column ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.seven-day-section {
+  margin-top: 24px;
+}
+
+.toggle-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #607d8b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background: #546e7a;
+}
+
+.seven-day {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.day-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.day-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.day-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.day-temp {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.day-desc {
+  text-transform: capitalize;
+  opacity: 0.8;
+  margin-top: 2px;
+}
